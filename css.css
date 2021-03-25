@@ -7,87 +7,110 @@
     src: url(Roboto-Light.ttf);
 }
 
-html {
-    background-color: white;
+
+/* want to put the navbar buttons in a container to not repeat over and over again but anytime i do it never works */
+
+#navbar {
+    display: grid;
+    grid-template-columns: 50px 50px 1fr 50px 50px 50px 50px;
+    grid-template-rows: 50px;
+    grid-template-areas: "about store . gmail images apps sign-in";
 }
 
-.mini-profile-icon {
-    padding: 12px;
-    border-radius: 720px;
-    height: 32px;
-    width: 32px;
-    float: right;
-}
-
-.appselect {
-    float: right;
-    height: 20px;
-    width: 20px;
-    padding: 20px;
-}
-
-.google-logo {
-    width: 290px;
-    height: 95px;
-    margin-left: 38%;
-    margin-top: 270px;
-}
-
-.searchbar {
-    border-radius: 30px;
-    width: 30rem;
+#about {
+    font-family: myFont;
+    font-size: 15px;
+    grid-area: about;
+    justify-self: center;
+    align-self: center;
     border: transparent;
-    padding: .3rem;
-    position: absolute;
-    left: 380px;
-    top: 40.6%;
     outline: none;
 }
 
-.search-button {
-    background-color: white;
-    border: transparent;
-    position: absolute;
-    top: 45%;
-    left: 490px;
-    font-size: 15px;
-    padding: 20px;
-}
-
-.lucky {
-    background-color: white;
-    border: transparent;
-    position: absolute;
-    top: 45%;
-    left: 640px;
-    font-size: 15px;
-    padding: 20px;
-}
-
-.search-logo {
-    height: 33px;
-    position: absolute;
-    top: 40.3%;
-    left: 348px;
-}
-
-.mic-logo {
-    height: 33px;
-    position: absolute;
-    top: 40.2%;
-    right: 375px;
-}
-
-.gmail {
+#store {
     font-family: myFont;
-    position: absolute;
-    right: 180px;
-    top: 22px;
+    font-size: 15px;
+    grid-area: store;
+    justify-self: center;
+    align-self: center;
+    border: transparent;
+    outline: none;
 }
 
-.images {
+#gmail {
     font-family: myFont;
-    position: absolute;
-    right: 120px;
-    top: 22px;
+    font-size: 15px;
+    grid-area: gmail;
+    justify-self: center;
+    align-self: center;
+    border: transparent;
+    outline: none;
+}
+
+#images {
+    font-family: myFont;
+    font-size: 15px;
+    grid-area: images;
+    justify-self: center;
+    align-self: center;
+    border: transparent;
+    outline: none;
+}
+
+#apps {
+    grid-area: apps;
+    justify-self: center;
+    align-self: center;
+    height: 25px;
+}
+
+#sign-in {
+    grid-area: sign-in;
+    justify-self: center;
+    align-self: center;
+    border-radius: 100%;
+    height: 28px;
+}
+
+#logo {
+    height: 5rem;
+}
+
+
+/* needed to look up how to put the "google search" and "feeling lucky" buttons next to each other on the grid */
+
+#main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 250px 40px 70px 250px;
+    grid-template-areas: ". logo ." ". search-bar ." ". gridbox .";
+}
+
+#logo {
+    grid-area: logo;
+    justify-self: center;
+    align-self: flex-end;
+    margin-bottom: 10px;
+}
+
+#search-bar {
+    grid-area: search-bar;
+    border: none;
+    outline: none;
+    border-radius: 2em;
+    border: 1px solid grey;
+}
+
+#search-button,
+#lucky {
+    border: none;
+    outline: none;
+    font-family: myFont;
+    font-size: 16px;
+}
+
+#gridbox {
+    display: flex;
+    grid-area: gridbox;
+    justify-content: space-evenly;
 }
