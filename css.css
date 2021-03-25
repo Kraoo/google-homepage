@@ -1,3 +1,9 @@
+/* google search flexboxed and gridboxes. There is a website called CSS.tricks. I see you used 'absolute' to position things. 
+    you dont want to do this because when the viewport changes you positions will be jacked. Use grid and flexbox together to
+    frame and adjust. Your variable names need to describe 'intent'. You want your code to be story. I should be able to read
+    this and picture what is happening. .pfp doesn't describe what it is. It makes sense to you of course, but not the reader.
+    Keep building and you will get better with each project.
+*/
 * {
     margin: 0;
 }
@@ -11,29 +17,29 @@ html {
     background-color: white;
 }
 
-.pfp {
+.pfp { /* bad name */
     padding: 12px;
     border-radius: 720px;
     height: 32px;
-    width: 32;
+    width: 32; /* you missed a px here */
     float: right;
 }
 
-.grid {
+.grid {/* bad name */
     float: right;
     height: 20px;
-    width: 20;
+    width: 20; /* you missed a px here */
     padding: 20px;
 }
 
-.titlecard {
+.titlecard {/* bad name */
     width: 290px;
     height: 95px;
     margin-left: 38%;
     margin-top: 270px;
 }
 
-.searchbar {
+.searchbar {/* good name */
     border-radius: 30px;
     width: 30rem;
     border: transparent;
@@ -41,10 +47,10 @@ html {
     position: absolute;
     left: 380px;
     top: 40.6%;
-    outline: none;
+    outline: none;/* hahhaha */
 }
 
-.googlesr {
+.googlesr {/* bad name */
     background-color: white;
     border: transparent;
     position: absolute;
@@ -54,7 +60,7 @@ html {
     padding: 20px;
 }
 
-.lucky {
+.lucky { /* good name */
     background-color: white;
     border: transparent;
     position: absolute;
@@ -64,7 +70,7 @@ html {
     padding: 20px;
 }
 
-.search {
+.search {/* bad name, because searchbar exist */
     height: 33px;
     position: absolute;
     top: 40.3%;
