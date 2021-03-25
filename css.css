@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+}
+
+@font-face {
+    font-family: myFont;
+    src: url(Roboto-Light.ttf);
+}
+
+html {
+    background-color: white;
+}
+
+.pfp {
+    padding: 12px;
+    border-radius: 720px;
+    height: 32px;
+    width: 32;
+    float: right;
+}
+
+.grid {
+    float: right;
+    height: 20px;
+    width: 20;
+    padding: 20px;
+}
+
+.titlecard {
+    width: 290px;
+    height: 95px;
+    margin-left: 38%;
+    margin-top: 270px;
+}
+
+.searchbar {
+    border-radius: 30px;
+    width: 30rem;
+    border: transparent;
+    padding: .3rem;
+    position: absolute;
+    left: 380px;
+    top: 40.6%;
+    outline: none;
+}
+
+.googlesr {
+    background-color: white;
+    border: transparent;
+    position: absolute;
+    top: 45%;
+    left: 490px;
+    font-size: 15px;
+    padding: 20px;
+}
+
+.lucky {
+    background-color: white;
+    border: transparent;
+    position: absolute;
+    top: 45%;
+    left: 640px;
+    font-size: 15px;
+    padding: 20px;
+}
+
+.search {
+    height: 33px;
+    position: absolute;
+    top: 40.3%;
+    left: 348px;
+}
+
+.mic {
+    height: 33px;
+    position: absolute;
+    top: 40.2%;
+    right: 375px;
+}
+
+.gmail {
+    font-family: myFont;
+    position: absolute;
+    right: 180px;
+    top: 22px;
+}
+
+.images {
+    font-family: myFont;
+    position: absolute;
+    right: 120px;
+    top: 22px;
+}
