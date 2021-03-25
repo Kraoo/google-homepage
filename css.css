@@ -11,22 +11,22 @@ html {
     background-color: white;
 }
 
-.pfp {
+.mini-profile-icon {
     padding: 12px;
     border-radius: 720px;
     height: 32px;
-    width: 32;
+    width: 32px;
     float: right;
 }
 
-.grid {
+.appselect {
     float: right;
     height: 20px;
-    width: 20;
+    width: 20px;
     padding: 20px;
 }
 
-.titlecard {
+.google-logo {
     width: 290px;
     height: 95px;
     margin-left: 38%;
@@ -44,7 +44,7 @@ html {
     outline: none;
 }
 
-.googlesr {
+.search-button {
     background-color: white;
     border: transparent;
     position: absolute;
@@ -64,14 +64,14 @@ html {
     padding: 20px;
 }
 
-.search {
+.search-logo {
     height: 33px;
     position: absolute;
     top: 40.3%;
     left: 348px;
 }
 
-.mic {
+.mic-logo {
     height: 33px;
     position: absolute;
     top: 40.2%;
