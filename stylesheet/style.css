@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+}
+
+@font-face {
+    font-family: myFont;
+    src: url(Roboto-Light.ttf);
+}
+
+
+/* want to put the navbar buttons in a container to not repeat over and over again but anytime i do it never works */
+
+button {
+    font-family: myFont;
+    background: white;
+    border: transparent;
+    outline: none;
+}
+
+#navbar {
+    display: grid;
+    grid-template-columns: 50px 50px 1fr 50px 50px 50px 50px;
+    grid-template-rows: 50px;
+    grid-template-areas: "about store . gmail images apps sign-in";
+}
+
+#about {
+    font-size: 15px;
+    grid-area: about;
+    justify-self: center;
+    align-self: center;
+}
+
+#store {
+    font-size: 15px;
+    grid-area: store;
+    justify-self: center;
+    align-self: center;
+}
+
+#gmail {
+    font-size: 15px;
+    grid-area: gmail;
+    justify-self: center;
+    align-self: center;
+}
+
+#images {
+    font-size: 15px;
+    grid-area: images;
+    justify-self: center;
+    align-self: center;
+}
+
+#apps {
+    grid-area: apps;
+    justify-self: center;
+    align-self: center;
+    height: 25px;
+}
+
+#sign-in {
+    grid-area: sign-in;
+    justify-self: center;
+    align-self: center;
+    border-radius: 100%;
+    height: 28px;
+}
+
+#logo {
+    height: 5rem;
+}
+
+
+/* needed to look up how to put the "google search" and "feeling lucky" buttons next to each other on the grid */
+
+#main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 250px 40px 40px 40px 70px 250px;
+    grid-template-areas: ". logo ." ". search-bar ." ". gridbox .";
+}
+
+#search-icon {
+    padding: 5px;
+    height: 30px;
+    grid-area: 2;
+    justify-self: right;
+    align-self: flex-end;
+}
+
+#mic-icon {
+    padding: 5px;
+    height: 30px;
+    justify-self: left;
+    align-self: flex-end;
+    grid-area: -6;
+}
+
+#logo {
+    grid-area: logo;
+    justify-self: center;
+    align-self: flex-end;
+    margin-bottom: 10px;
+}
+
+#search-bar {
+    grid-area: search-bar;
+    border: none;
+    outline: none;
+    border-radius: 2em;
+    border: 1px solid lightgrey;
+    padding: 1em;
+}
+
+#search-button,
+#lucky {
+    font-size: 16px;
+}
+
+#gridbox {
+    display: flex;
+    grid-area: gridbox;
+    justify-content: space-evenly;
+}
