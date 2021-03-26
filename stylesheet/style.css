@@ -11,7 +11,10 @@
 /* want to put the navbar buttons in a container to not repeat over and over again but anytime i do it never works */
 
 button {
+    font-family: myFont;
     background: white;
+    border: transparent;
+    outline: none;
 }
 
 #navbar {
@@ -22,43 +25,31 @@ button {
 }
 
 #about {
-    font-family: myFont;
     font-size: 15px;
     grid-area: about;
     justify-self: center;
     align-self: center;
-    border: transparent;
-    outline: none;
 }
 
 #store {
-    font-family: myFont;
     font-size: 15px;
     grid-area: store;
     justify-self: center;
     align-self: center;
-    border: transparent;
-    outline: none;
 }
 
 #gmail {
-    font-family: myFont;
     font-size: 15px;
     grid-area: gmail;
     justify-self: center;
     align-self: center;
-    border: transparent;
-    outline: none;
 }
 
 #images {
-    font-family: myFont;
     font-size: 15px;
     grid-area: images;
     justify-self: center;
     align-self: center;
-    border: transparent;
-    outline: none;
 }
 
 #apps {
@@ -107,9 +98,6 @@ button {
 
 #search-button,
 #lucky {
-    border: none;
-    outline: none;
-    font-family: myFont;
     font-size: 16px;
 }
 
